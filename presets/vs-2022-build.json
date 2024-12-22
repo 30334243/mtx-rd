@@ -1,0 +1,33 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23,
+        "patch": 0
+    },
+    "include": [
+        "vs-2022.json"
+    ],
+    "buildPresets": [
+        {
+            "name": "vs-2022-mt-debug",
+            "configurePreset": "vs-2022-mt",
+            "configuration": "Debug"
+        },
+        {
+            "name": "vs-2022-mt-release",
+            "configurePreset": "vs-2022-mt",
+            "configuration": "Release"
+        },
+        {
+            "name": "vs-2022-md-debug",
+            "configurePreset": "vs-2022-md",
+            "configuration": "Debug"
+        },
+        {
+            "name": "vs-2022-md-release",
+            "configurePreset": "vs-2022-md",
+            "configuration": "Release"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "environment",
+            "hidden": true,
+            "environment": {
+                "PROJECT_NAME": "mtx"
+            }
+        },
+        {
+            "name": "cache",
+            "hidden": true,
+            "inherits": [
+                "environment"
+            ],
+            "binaryDir": "$env{USERPROFILE}/cxx/builds/$env{PROJECT_NAME}/${presetName}",
+            "installDir": "$env{USERPROFILE}/cxx/install/$env{PROJECT_NAME}/${presetName}",
+            "generator": "Visual Studio 17 2022"
+        }
+    ]
+}

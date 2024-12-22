@@ -1,0 +1,62 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23,
+        "patch": 0
+    },
+    "workflowPresets": [
+        {
+            "name": "vs-2022-mt-debug-ci",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "vs-2022-mt"
+                },
+                {
+                    "type": "build",
+                    "name": "vs-2022-mt-debug"
+                }
+            ]
+        },
+        {
+            "name": "vs-2022-md-debug-ci",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "vs-2022-md"
+                },
+                {
+                    "type": "build",
+                    "name": "vs-2022-md-debug"
+                }
+            ]
+        },
+        {
+            "name": "vs-2022-mt-release-ci",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "vs-2022-mt"
+                },
+                {
+                    "type": "build",
+                    "name": "vs-2022-mt-release"
+                }
+            ]
+        },
+        {
+            "name": "vs-2022-md-release-ci",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "vs-2022-md"
+                },
+                {
+                    "type": "build",
+                    "name": "vs-2022-md-release"
+                }
+            ]
+        }
+    ]
+}

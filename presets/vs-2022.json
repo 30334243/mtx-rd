@@ -1,0 +1,31 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23,
+        "patch": 0
+    },
+    "include": [
+        "cache.json"
+    ],
+    "configurePresets": [
+        {
+            "name": "vs-2022-mt",
+            "inherits": [
+                "cache"
+            ],
+            "cacheVariables": {
+                "RUNTIME_STATIC": "ON"
+            }
+        },
+        {
+            "name": "vs-2022-md",
+            "inherits": [
+                "cache"
+            ],
+            "cacheVariables": {
+                "RUNTIME_DLL": "ON"
+            }
+        }
+    ]
+}
